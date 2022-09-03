@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+img{
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to left top,white,black);
+}
+
+.glass-box {
+    background:linear-gradient(to left top,rgba(255,255,255,0.8),rgba(255,255,255,0.3));
+    width: 60%;
+    height: 80%;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    backdrop-filter: blur(0.5rem);
+    
+}
+.circle1,
+.circle2,
+.circle3,
+.circle4,
+.circle5,
+.circle6
+{
+    background:linear-gradient(to left top,rgba(255,255,255,0.9),rgba(0,0,0,0.3));
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.circle1{
+    background-color: red;
+    position: absolute;
+    top: 110px;
+    left: 100px;
+}
+.circle2{
+    background-color:violet;
+    position: absolute;
+    bottom: 10px;
+    left: 150px;
+    width: 150px;
+    height: 150px;
+}
+.circle3{
+    background-color:green;
+    position: absolute;
+    top: 30px;
+    right: 130px;
+    width: 250px;
+    height: 250px;
+}
+.circle4{
+    background-color:black;
+    position: absolute;
+    top: 130px;
+    right: 170px;
+    width: 50px;
+    height: 50px;
+}
+.circle5{
+    background-color:orange;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 200px;
+    height: 200px;
+}
+.circle6{
+    background-color:rgb(150, 5, 253);
+    position: absolute;
+    top: -10px;
+    right: 550px;
+    width: 150px;
+    height: 150px;
+}
+.profile-col{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(to left top,rgba(255,255,255,0.8),rgba(255,255,255,0.3));
+    border-radius: 1rem 0 0 1rem;
+}
+.games-col{
+    flex: 2;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.user img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background:linear-gradient(to left top,rgba(255,255,255,0.8),rgba(255,255,255,0.3));
+    padding:0.3rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.links .link{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    text-transform: capitalize;
+}
+.link i{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(to left top,rgba(250, 246, 246, 0.8),rgba(241, 240, 240, 0.3));
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.more{
+    color: blue;
+}
+.search{
+    text-transform: capitalize;
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+.search input{
+    border-radius:1rem;
+    background:linear-gradient(to left top,rgba(255,255,255,0.8),rgba(255,255,255,0.3));
+    width: 50%;
+    padding-left: 1rem;
+}
+.games{
+    display: flex;
+    align-items: center;
+    background:linear-gradient(to left top,rgba(255,255,255,0.8),rgba(255,255,255,0.3));
+    border-radius: 1rem;
+    position: relative;
+    margin-bottom: 1rem;
+}
+.image{
+    display: flex;
+}
+.image img{
+    height: 70px;
+    width: 100px;
+    padding: 5px;
+    border-radius:1rem;
+    margin-right: 10px;
+}
+.info{
+    text-transform: capitalize;
+}
+.info i{
+    color: orange;
+}
+.rating{
+    position:absolute;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+}
+.rating h5{
+    font-size: 10px;
+    color: blue;
+}
+.rating p{
+    background:linear-gradient(to left top,rgba(255,255,255,0.8),rgba(255,255,255,0.3));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    color: orange;
+    font-size: 20px;
+}
+#black{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
