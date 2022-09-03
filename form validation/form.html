@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>user registration form</title>
+</head>
+<style>
+    body{
+        background-image: url(moon.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="head">
+            <h1>create your registration</h1>
+        </div>
+        <form class="form">
+            <div class="form-control">
+                <label for="username" class="username">username</label>
+                <input type="text" id="username" name="username" placeholder="choose user name">
+                <small>error</small>
+            </div>
+            <div class="form-control">
+                <label for="email" class="email">email</label>
+                <input type="email" id="email" name="email" placeholder="email">
+                <small>error</small>
+            </div>
+            <div class="form-control">
+                <label for="pass1" class="pass1">password</label>
+                <input type="password" id="pass1" name="pass1" placeholder="choose password">
+                <small>error</small>
+            </div>
+            <div class="form-control">
+                <label for="pass2" class="pass2">confirm password</label>
+                <input type="password" id="pass2" name="pass2" placeholder="conform password">
+                <small>error</small>
+            </div>
+            <div class="form-control">
+                <button>submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>

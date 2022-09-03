@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container
+{
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+}
+.head
+{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-transform: capitalize;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 1rem 1rem 0 0;
+    margin-bottom: 1rem;
+}
+.container .form
+{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+.form-control
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    color: white;
+}
+.form-control label
+{
+    font-size: 18px;
+}
+.form-control input
+{
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+}
+.form-control small
+{
+    visibility: hidden;
+    color: yellow;
+    text-transform: lowercase;
+}
+.form-control.success input
+{
+    border: 2px solid green;
+}
+.form-control.error input
+{
+    border: 2px solid red;
+}
+button{
+    margin-bottom: 1rem;
+    padding: 5px;
+    font-size: 15px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
