@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+} 
+body{
+    width: 100%;
+    height: 100vh;
+    background: var(--color);
+}
+:root{
+    --color:rgb(240, 6, 41);
+}
+.navigator{
+    width: 100%;
+    height: 70px;
+    background: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.navigator ul{
+    display: flex;
+    align-items: center;
+}
+.navigator ul li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+.navigator ul li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+}
+.navigator ul li a .icon{
+    position: absolute;
+    top:-10px;
+    font-size: 1.5em;
+    transition: 0.5s;
+}
+.navigator ul li.active a .icon{
+    transform:translateY(25px);
+}
+.navigator ul li a .text{
+    position: absolute;
+    opacity: 0;
+    transform: translateY(-30px);
+}
+.navigator ul li.active a .text{
+    opacity: 1;
+    transition: 0.5s;
+    transform: translateY(-20px);
+}
+.navigator ul li:hover a .text{
+    opacity: 1;
+    transition: 0.5s;
+    transform: translateY(-20px);
+}
+
+.indicator{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: rgb(117, 248, 117);
+    top: 40%;
+    border-radius: 50%;
+    border: 6px solid var(--color);
+}
+.indicator::before{
+    content: '';
+    width: 23px;
+    height: 23px;
+    background:transparent;
+    position: absolute;
+    bottom: 38%;
+    left: -27px;
+    border-bottom-right-radius:20px;
+    box-shadow: 2px 12px 0 0 var(--color);
+}
+.indicator::after{
+    position:absolute;
+    width: 23px;
+    height: 23px;
+    background:transparent;
+    content: '';
+    bottom: 38%;
+    right: -27px;
+    border-bottom-left-radius: 20px;
+    box-shadow: -2px 12px 0 0 var(--color);
+}
+.navigator ul li:nth-child(1).active ~ .indicator{
+    transform: translateX(calc(70px*0));
+    transition: 0.5s;
+}
+.navigator ul li:nth-child(2).active ~ .indicator{
+    transform: translateX(calc(70px*1));
+    transition: 0.5s;
+}
+.navigator ul li:nth-child(3).active ~ .indicator{
+    transform: translateX(calc(70px*2));
+    transition: 0.5s;
+}
+.navigator ul li:nth-child(4).active ~ .indicator{
+    transform: translateX(calc(70px*3));
+    transition: 0.5s;
+}
+.navigator ul li:nth-child(5).active ~ .indicator{
+    transform: translateX(calc(70px*4));
+    transition: 0.5s;
+}
+.navigator ul li:nth-child(6).active ~ .indicator{
+    transform: translateX(calc(70px*5));
+    transition: 0.5s;
+}
+.navigator ul li:nth-child(7).active ~ .indicator{
+    transform: translateX(calc(70px*6));
+    transition: 0.5s;
+}
+.navigator ul li:nth-child(8).active ~ .indicator{
+    transform: translateX(calc(70px*7));
+    transition: 0.5s;
+}
+.navigator ul li:nth-child(9).active ~ .indicator{
+    transform: translateX(calc(70px*8));
+    transition: 0.5s;
+}
+.navigator ul li:nth-child(10).active ~ .indicator{
+    transform: translateX(calc(70px*9));
+    transition: 0.5s;
+}
+.navigator ul li:nth-child(11).active ~ .indicator{
+    transform: translateX(calc(70px*10));
+    transition: 0.5s;
+}
+.navigator ul li:nth-child(12).active ~ .indicator{
+    transform: translateX(calc(70px*11));
+    transition: 0.5s;
+}
+.navigator ul li:nth-child(13).active ~ .indicator{
+    transform: translateX(calc(70px*12));
+    transition: 0.5s;
+}
+.navigator ul li:nth-child(14).active ~ .indicator{
+    transform: translateX(calc(70px*13));
+    transition: 0.5s;
+}
+.navigator ul li:nth-child(15).active ~ .indicator{
+    transform: translateX(calc(70px*14));
+    transition: 0.5s;
+}
+.navigator ul li:nth-child(16).active ~ .indicator{
+    transform: translateX(calc(70px*15));
+    transition: 0.5s;
+}
+.navigator ul li:nth-child(17).active ~ .indicator{
+    transform: translateX(calc(70px*16));
+    transition: 0.5s;
+}
+

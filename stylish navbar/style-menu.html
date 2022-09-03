@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-menu.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navigator">
+        <ul>
+            
+            <li class="list active">
+                <a href="#">
+                    <p class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </p>
+                    <p class="text">home</p>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <p class="icon">
+                        <ion-icon name="book"></ion-icon>
+                    </p>
+                    <p class="text">book</p>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <p class="icon">
+                        <ion-icon name="chatbubble-outline"></ion-icon>
+                    </p>
+                    <p class="text">chat</p>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <p class="icon">
+                        <ion-icon name="airplane-outline"></ion-icon>
+                    </p>
+                    <p class="text">flight</p>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <p class="icon">
+                        <ion-icon name="people-circle-outline"></ion-icon>
+                    </p>
+                    <p class="text">groups</p>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <p class="icon">
+                        <ion-icon name="trash-outline"></ion-icon>
+                    </p>
+                    <p class="text">delete</p>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <p class="icon">
+                        <ion-icon name="settings"></ion-icon>
+                    </p>
+                    <p class="text">settings</p>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <p class="icon">
+                        <ion-icon name="contrast"></ion-icon>
+                    </p>
+                    <p class="text">contrast</p>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <p class="icon">
+                        <ion-icon name="headset"></ion-icon>
+                    </p>
+                    <p class="text">headset</p>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <p class="icon">
+                        <ion-icon name="mic"></ion-icon>
+                    </p>
+                    <p class="text">mic</p>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <p class="icon">
+                        <ion-icon name="bicycle"></ion-icon>
+                    </p>
+                    <p class="text">bicycle</p>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <p class="icon">
+                        <ion-icon name="bus"></ion-icon>
+                    </p>
+                    <p class="text">bus</p>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <p class="icon">
+                        <ion-icon name="bluetooth"></ion-icon>
+                    </p>
+                    <p class="text">bluetooth</p>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <p class="icon">
+                        <ion-icon name="call"></ion-icon>
+                    </p>
+                    <p class="text">phone</p>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <p class="icon">
+                        <ion-icon name="camera"></ion-icon>
+                    </p>
+                    <p class="text">camera</p>
+                </a>
+            </li>           
+            <li class="list">
+                <a href="#">
+                    <p class="icon">
+                        <ion-icon name="alarm-outline"></ion-icon>
+                    </p>
+                    <p class="text">alarm</p>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <p class="icon">
+                        <ion-icon name="power"></ion-icon>
+                    </p>
+                    <p class="text">power</p>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+        
+    </div>
+<script>
+    const list=document.querySelectorAll('.list');
+    function activeLink(){
+        list.forEach((item)=>
+        item.classList.remove('active'));
+        this.classList.add('active');
+    }
+    list.forEach((item)=>
+    item.addEventListener('click',activeLink));
+</script>
+</body>
+
+</html>
